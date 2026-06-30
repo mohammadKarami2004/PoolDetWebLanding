@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PoolDet — The Water, Perfectly Understood</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">POOL<span>DET</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#features" data-en="Features" data-fa="ویژگی‌ها">Features</a>
+      <a href="#how" data-en="How It Works" data-fa="نحوه کار">How It Works</a>
+      <a href="#pricing" data-en="Pricing" data-fa="قیمت">Pricing</a>
+      <a href="#contact" data-en="Contact" data-fa="تماس">Contact</a>
+      <button class="lang-btn" id="langBtn">فارسی</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <canvas id="waveCanvas"></canvas>
+  <div class="hero-ripples">
+    <div class="ripple r1"></div>
+    <div class="ripple r2"></div>
+    <div class="ripple r3"></div>
+  </div>
+
+  <div class="hero-content reveal">
+    <h1 data-en="The water,<br><em>perfectly understood</em>" data-fa="آب،<br><em>کاملاً درک‌شده</em>">The water,<br><em>perfectly understood</em></h1>
+    <p data-en="Precision sensors that watch over your pool day and night — live stream, instant alerts, and automatic calibration." data-fa="سنسورهای دقیق که شبانه‌روز مراقب استخر شما هستند؛ پخش زنده، هشدار آنی و کالیبراسیون خودکار.">Precision sensors that watch over your pool day and night — live stream, instant alerts, and automatic calibration.</p>
+    <a href="#" class="cta-btn">
+      <span data-en="Discover PoolDet" data-fa="کشف پول‌دت">Discover PoolDet</span>
+    </a>
+  </div>
+
+  <!-- Signature element: AI detection status panel -->
+  <div class="sensor-panel reveal" style="transition-delay:.2s">
+    <div class="detect-feed">
+      <div class="feed-dot-wrap">
+        <span class="feed-dot"></span>
+      </div>
+      <div class="feed-text">
+        <div class="feed-label" data-en="AI MONITORING" data-fa="نظارت هوش مصنوعی">AI MONITORING</div>
+        <div class="feed-value" data-en="No activity detected" data-fa="فعالیتی شناسایی نشد">No activity detected</div>
+      </div>
+    </div>
+    <div class="sensor-divider"></div>
+    <div class="sensor-item">
+      <div class="sensor-label" data-en="UPTIME" data-fa="آپتایم">UPTIME</div>
+      <div class="sensor-value"><span id="uptimeVal">14:22:07</span></div>
+    </div>
+    <div class="sensor-divider"></div>
+    <div class="sensor-item">
+      <div class="sensor-label" data-en="ALERTS TODAY" data-fa="هشدار امروز">ALERTS TODAY</div>
+      <div class="sensor-value"><span id="alertsVal">0</span></div>
+    </div>
+    <div class="sensor-status">
+      <span class="status-dot"></span>
+      <span data-en="Live" data-fa="زنده">Live</span>
+    </div>
+  </div>
+
+  <div class="scroll-cue reveal" style="transition-delay:.4s">
+    <span></span>
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat reveal">
+      <div class="stat-value" data-count="1000" data-suffix="+">0</div>
+      <div class="stat-label" data-en="Active Users" data-fa="کاربر فعال">Active Users</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal" style="transition-delay:.1s">
+      <div class="stat-value" data-count="99.9" data-suffix="%">0</div>
+      <div class="stat-label" data-en="Uptime" data-fa="آپتایم">Uptime</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal" style="transition-delay:.2s">
+      <div class="stat-value-text" data-en="Real-time" data-fa="لحظه‌ای">Real-time</div>
+      <div class="stat-label" data-en="Monitoring" data-fa="مانیتورینگ">Monitoring</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal" style="transition-delay:.3s">
+      <div class="stat-value-text" data-en="24/7" data-fa="۲۴/۷">24/7</div>
+      <div class="stat-label" data-en="Support" data-fa="پشتیبانی">Support</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-en="FEATURES" data-fa="ویژگی‌ها">FEATURES</div>
+      <h2 data-en="Watching, so you don't have to" data-fa="مراقب است، تا شما لازم نباشد">Watching, so you don't have to</h2>
+      <p data-en="PoolDet streams, detects, and alerts — in real time." data-fa="پول‌دت پخش می‌کند، تشخیص می‌دهد و هشدار می‌دهد — همه به‌صورت لحظه‌ای.">PoolDet streams, detects, and alerts — in real time.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 data-en="Live Stream" data-fa="پخش زنده">Live Stream</h3>
+        <p data-en="Watch your pool in real-time from anywhere in the world." data-fa="استخر خود را از هر جای دنیا به‌صورت زنده تماشا کنید.">Watch your pool in real-time from anywhere in the world.</p>
+      </div>
+
+      <div class="feature-card reveal" style="transition-delay:.1s">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2ZM18 16v-5a6 6 0 0 0-4-5.65V4a2 2 0 0 0-4 0v1.35A6 6 0 0 0 6 11v5l-2 2v1h16v-1l-2-2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 data-en="Smart Alerts" data-fa="هشدار هوشمند">Smart Alerts</h3>
+        <p data-en="Get instant notifications the moment something needs your attention." data-fa="در لحظه‌ای که نیاز به توجه باشد، اعلان فوری دریافت کنید.">Get instant notifications the moment something needs your attention.</p>
+      </div>
+
+      <div class="feature-card reveal" style="transition-delay:.2s">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 6v6c0 5 4 9 9 10 5-1 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 data-en="AI Detection" data-fa="تشخیص هوشمند">AI Detection</h3>
+        <p data-en="On-device AI watches the water and recognizes danger the moment it happens." data-fa="هوش مصنوعی روی دستگاه آب را زیر نظر دارد و خطر را در همان لحظه تشخیص می‌دهد.">On-device AI watches the water and recognizes danger the moment it happens.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-alt" id="how">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-en="HOW IT WORKS" data-fa="نحوه کار">HOW IT WORKS</div>
+      <h2 data-en="Up and running in minutes" data-fa="در چند دقیقه آماده‌به‌کار">Up and running in minutes</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3 data-en="Install the device" data-fa="نصب دستگاه">Install the device</h3>
+        <p data-en="Place the PoolDet sensor in your pool in minutes — no tools required." data-fa="سنسور پول‌دت را در چند دقیقه و بدون نیاز به ابزار در استخر نصب کنید.">Place the PoolDet sensor in your pool in minutes — no tools required.</p>
+      </div>
+      <div class="step-line reveal"></div>
+      <div class="step reveal" style="transition-delay:.1s">
+        <div class="step-num">02</div>
+        <h3 data-en="Connect to app" data-fa="اتصال به اپ">Connect to app</h3>
+        <p data-en="Pair with the PoolDet Android app over Wi-Fi in a few taps." data-fa="با چند ضربه از طریق Wi-Fi به اپ اندروید پول‌دت متصل شوید.">Pair with the PoolDet Android app over Wi-Fi in a few taps.</p>
+      </div>
+      <div class="step-line reveal" style="transition-delay:.1s"></div>
+      <div class="step reveal" style="transition-delay:.2s">
+        <div class="step-num">03</div>
+        <h3 data-en="Monitor & relax" data-fa="نظارت و آرامش">Monitor &amp; relax</h3>
+        <p data-en="Get real-time data and alerts on your phone, wherever you are." data-fa="داده‌های لحظه‌ای و هشدارها را هرجا که باشید روی گوشی دریافت کنید.">Get real-time data and alerts on your phone, wherever you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="section-inner pricing-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-en="PRICING" data-fa="قیمت">PRICING</div>
+      <h2 data-en="Simple, one-time purchase" data-fa="خرید ساده و یک‌باره">Simple, one-time purchase</h2>
+      <p data-en="Available now on Amazon. No subscriptions, no hidden fees." data-fa="هم‌اکنون در آمازون موجود است. بدون اشتراک، بدون هزینه پنهان.">Available now on Amazon. No subscriptions, no hidden fees.</p>
+    </div>
+    <a href="#" class="cta-btn reveal">
+      <span data-en="View on Amazon" data-fa="مشاهده در آمازون">View on Amazon</span>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="section-inner contact-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-en="CONTACT" data-fa="تماس">CONTACT</div>
+      <h2 data-en="Get in touch" data-fa="با ما در ارتباط باشید">Get in touch</h2>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <input type="email" class="form-input" data-en-placeholder="Email address" data-fa-placeholder="آدرس ایمیل" placeholder="Email address" required>
+      <textarea class="form-input" rows="5" data-en-placeholder="Your message" data-fa-placeholder="پیام شما" placeholder="Your message" required></textarea>
+      <button type="submit" class="cta-btn cta-full">
+        <span data-en="Send Message" data-fa="ارسال پیام">Send Message</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="logo">POOL<span>DET</span></div>
+    <p data-en="© 2025 PoolDet. All rights reserved." data-fa="© ۱۴۰۴ پول‌دت. تمامی حقوق محفوظ است.">© 2025 PoolDet. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
